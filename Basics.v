@@ -1038,13 +1038,16 @@ Fixpoint plus' (n : nat) (m : nat) : nat :=
     _does_ terminate on all inputs, but that Coq will _not_ accept
     because of this restriction. *)
 
+(**
 Fixpoint decreasing (a : nat) (b : nat) : nat :=
   match a with
     | 0 => match b with
              | 0 => 0
              | S b' => decreasing b' a
+           end
     | S a' => decreasing a' b
-end.
+  end.
+**)
 (** [decreasing] first decreases on 1st argument then 2nd argument **)
 
 (** [] *)
