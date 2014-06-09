@@ -969,10 +969,6 @@ Proof. reflexivity. Qed.
 Example test_incr_1: bin_to_nat (incr (OneTwice (OneTwice Z))) = 4.
 Proof. reflexivity. Qed.
 
-Theorem incr_to_nat:
-  forall (b : bin), bin_to_nat (incr b) = S (bin_to_nat b).
-Admitted.
-
 (** [] *)
 
 (* ###################################################################### *)
